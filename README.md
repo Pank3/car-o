@@ -41,6 +41,31 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+
+
+
+
+# Generating .apk from React App
+
+- In our project we used [Capacitor](https://capacitorjs.com/docs/getting-started) which is a cross-platform native runtime that makes it easy to build modern web apps that run natively on Android, iOS and the Web.
+
+- You will need at least [NodeJS 12 LTS](https://nodejs.org/en/) or later to get started.
+
+- To build Android apps, you will need to download and set up with the default process [Android Studio](https://developer.android.com/studio).
+
+- Steps to convert the React App to Android APK
+    - `npm install @capacitor/core` -> these two commands will set up the *capacitor environment* to implements of creating native application
+    - `npm install @capacitor/cli --save` -> these two commands will set up the capacitor environment to implements of creating native application
+    - `npm install @capacitor/android` -> adding all the modules and libraries to your app and set up android platform.
+    - `npx cap init` -> Initialize Capacitor configuration by providing an app name, app ID, and an optional web directory for the existing web app.
+    - `npm run build` -> using this command will creates a build directory with a production build of your app.
+    - `npx cap add android` -> this command will generate and add an android file which will have the libraries and modules to help the process of creating .apk file.
+    - `npx cap run android` -> this command will runs and builds the application with the Gradle library the one from Android Studio which helps to build and generate the .apk in the Android Studio automatically and the location of this app window will popup and you are good to go to use the application in you android devices.
+    - `npx cap open android` -> if the previous command doesn't run in the code terminal which you are using, then run this command and it will open the Android Studio with the prebuild .apk files and prepare the Gradle library to proceed. In this process go to Build menu and click Build Bundle first and after it completes, click Build APK on the same menu and it will generate the .apk and the location of this app window will popup and you are good to go to use the application in you android devices.
+
+
+
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
@@ -71,24 +96,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
-
-
-
-# Generating .apk from React App
-
-- In our project we used [Capacitor](https://capacitorjs.com/docs/getting-started) which is a cross-platform native runtime that makes it easy to build modern web apps that run natively on Android, iOS and the Web.
-
-- You will need at least [NodeJS 12 LTS](https://nodejs.org/en/) or later to get started.
-
-- To build Android apps, you will need to download and set up with the default process [Android Studio](https://developer.android.com/studio).
-
-- Steps to convert the React App to Android APK
-    - `npm install @capacitor/core` -> these two commands will set up the capacitor environment to implements of creating native application
-    - `npm install @capacitor/cli --save` -> these two commands will set up the capacitor environment to implements of creating native application
-    - `npm install @capacitor/android` -> adding all the modules and libraries to your app and set up android platform.
-    - `npx cap init` -> Initialize Capacitor configuration by providing an app name, app ID, and an optional web directory for the existing web app.
-    - `npm run build` -> using this command will creates a build directory with a production build of your app.
-    - `npx cap add android` -> this command will generate and add an android file which will have the libraries and modules to help the process of creating .apk file.
-    - `npx cap run android` -> this command will runs and builds the application with the Gradle library the one from Android Studio which helps to build and generate the .apk in the Android Studio automatically and the location of this app window will popup and you are good to go to use the application in you android devices.
-    - `npx cap open android` -> if the previous command doesn't run in the code terminal which you are using, then run this command and it will open the Android Studio with the prebuild .apk files and prepare the Gradle library to proceed. In this process go to Build menu and click Build Bundle first and after it completes, click Build APK on the same menu and it will generate the .apk and the location of this app window will popup and you are good to go to use the application in you android devices.
