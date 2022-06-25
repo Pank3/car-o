@@ -71,40 +71,38 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 
 - Drivers : 
-    -Driver 1 : 
-        Name : Driver One
-        Email Id : driver1@mail.c
-        Password : Pass1
+    - Driver 1 : 
+        - Name : Driver One
+        - Email Id : driver1@mail.c
+        - Password : Pass1
     
     - Driver 2 :
-        Name : Driver Two
-        Email Id : driver2@mail.c
-        Password : Pass2
--Passengers :
-    -Passenger 1:
-        Name : Gourab Passenger
-        Email : gourab@mail.com
-        Password : Pass123
-    -Passenger 2 :
-        Name : Pankaj Deb
-        Email : pankaj@gmail.com
-        Password : Pass123
+        - Name : Driver Two
+        - Email Id : driver2@mail.c
+        - Password : Pass2
+- Passengers :
+    - Passenger 1:
+        - Name : Gourab Passenger
+        - Email : gourab@mail.com
+        - Password : Pass123
+    - Passenger 2 :
+        - Name : Pankaj Deb
+        - Email : pankaj@gmail.com
+        - Password : Pass123
         
-## Process : 
+    ## Process  
     - Install our application in a device and login as Passenger with the above mentioned Passenger Ids.
     - Set Source and Destination location and start Search for driver.
     - User will get an Alert window with the driver mail id.
-    
-    
+
+
     - Login as the above mentioned driver within 30 second and he will see the passenger request in popup windown. 
     - Accept the request and it will appear in the list of the onborded passenger list of the driver.
     - When the driver pick up the passenger, He will press the pickup button placed beside the Passenger details in "Onborded Passenger List".
     - When the driver drop the passenger, He will click the "Drop" button, placed beside the Passenger Details in "Onborded Passenger List" and the curresponding passenger details will be removed from the "Onborded Passenger List".
-    #### Note : Pickup and Drop button is a toggle button, when the driver clicks on "Pickup button, the button will change to "Drop" button.
-    
-        
-        
+        #### Note : Pickup and Drop button is a toggle button, when the driver clicks on "Pickup button, the button will change to "Drop" button.
 
+---
 
 ## Learn More
 
