@@ -1,0 +1,30 @@
+.booknow-body{
+    /* border: 1px solid; */
+    margin-top: 4rem;
+}
+
+.needs-validation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.bn-invalid{
+    color: red;
+    display: none;
+}
+
+#pass-pickupLocation:invalid + .bn-pl-invalid{
+    /* border: 1px solid; */
+    display: block;
+}
+
+#pass-dropLocation:invalid + .bn-dl-invalid{
+    display: block;
+}
+
+#bn-pass-cnt:invalid + .bn-pc-invalid{
+    display: block;
+}
