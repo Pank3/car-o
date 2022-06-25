@@ -68,6 +68,8 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 # Process of using our CarO Demo Application
 
 #### Note: - In the prototype version of our application we have created 2 driver's account and 2 passenger's account.
+
+
 - Drivers : 
     -Driver 1 : 
         Name : Driver One
