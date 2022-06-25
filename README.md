@@ -54,16 +54,54 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - To build Android apps, you will need to download and set up with the default process [Android Studio](https://developer.android.com/studio).
 
 - Steps to convert the React App to Android APK
-    - `npm install @capacitor/core` -> these two commands will set up the *capacitor environment* to implements of creating native application
-    - `npm install @capacitor/cli --save` -> these two commands will set up the capacitor environment to implements of creating native application
+    - `npm install @capacitor/core` -> these two commands will set up the **capacitor environment** to implements of creating native application
+    - `npm install @capacitor/cli --save` -> these two commands will set up the **capacitor environment** to implements of creating native application
     - `npm install @capacitor/android` -> adding all the modules and libraries to your app and set up android platform.
     - `npx cap init` -> Initialize Capacitor configuration by providing an app name, app ID, and an optional web directory for the existing web app.
     - `npm run build` -> using this command will creates a build directory with a production build of your app.
     - `npx cap add android` -> this command will generate and add an android file which will have the libraries and modules to help the process of creating .apk file.
-    - `npx cap run android` -> this command will runs and builds the application with the Gradle library the one from Android Studio which helps to build and generate the .apk in the Android Studio automatically and the location of this app window will popup and you are good to go to use the application in you android devices.
+    - `npx cap run android` -> this command will runs and builds the application with the **Gradle library** the one from Android Studio which helps to build and generate the .apk in the Android Studio automatically and the location of this app window will popup and you are good to go to use the application in you android devices.
     - `npx cap open android` -> if the previous command doesn't run in the code terminal which you are using, then run this command and it will open the Android Studio with the prebuild .apk files and prepare the Gradle library to proceed. In this process go to Build menu and click Build Bundle first and after it completes, click Build APK on the same menu and it will generate the .apk and the location of this app window will popup and you are good to go to use the application in you android devices.
 
 
+
+# Process of using our CarO Demo Application
+
+#### Note: - In the prototype version of our application we have created 2 driver's account and 2 passenger's account.
+- Drivers : 
+    -Driver 1 : 
+        Name : Driver One
+        Email Id : driver1@mail.c
+        Password : Pass1
+    
+    - Driver 2 :
+        Name : Driver Two
+        Email Id : driver2@mail.c
+        Password : Pass2
+-Passengers :
+    -Passenger 1:
+        Name : Gourab Passenger
+        Email : gourab@mail.com
+        Password : Pass123
+    -Passenger 2 :
+        Name : Pankaj Deb
+        Email : pankaj@gmail.com
+        Password : Pass123
+        
+## Process : 
+    - Install our application in a device and login as Passenger with the above mentioned Passenger Ids.
+    - Set Source and Destination location and start Search for driver.
+    - User will get an Alert window with the driver mail id.
+    
+    
+    - Login as the above mentioned driver within 30 second and he will see the passenger request in popup windown. 
+    - Accept the request and it will appear in the list of the onborded passenger list of the driver.
+    - When the driver pick up the passenger, He will press the pickup button placed beside the Passenger details in "Onborded Passenger List".
+    - When the driver drop the passenger, He will click the "Drop" button, placed beside the Passenger Details in "Onborded Passenger List" and the curresponding passenger details will be removed from the "Onborded Passenger List".
+    #### Note : Pickup and Drop button is a toggle button, when the driver clicks on "Pickup button, the button will change to "Drop" button.
+    
+        
+        
 
 
 ## Learn More
