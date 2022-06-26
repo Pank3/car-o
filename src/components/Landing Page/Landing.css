@@ -1,0 +1,175 @@
+:root{
+    --animationtime_1 : 2s;
+    --animationtime_2 : 1s;
+    --logocolor : #fee4ff;
+    --passengerbtn : #d260ff;
+    --driverbtn : #9a60ff;
+
+}
+
+.landing{
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+    /* border: 10px solid; */
+}
+
+
+
+/* Animation */
+.home-circle svg{
+    transform: scale(15);
+    z-index: -9;
+    animation: backAnim var(--animationtime_1);
+    /* border: 10px solid; */
+}
+.caro-name{
+    /* border: 1px solid red; */
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    width: 100vw;
+    top: 20%;
+    font-family: 'Fredoka One', cursive;
+    font-size: 4rem;
+    color: var(--logocolor);
+
+    animation: name_anim var(--animationtime_1);
+}
+
+@keyframes backAnim {
+    0%{
+        transform: scale(70);
+    }
+
+    100%{
+        transform: scale(15);
+    }
+}
+
+@keyframes name_anim {
+    0%{
+        top: 100%;
+    }
+
+    100%{
+        top: 20%;
+    }
+}
+
+/* Login Details */
+.land-login{
+    position: relative;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.buttonTemp{
+    
+    width: fit-content;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.2rem 1.2rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.338);
+    color: #fee4ff;
+    box-shadow: 0px 0px 6px 1px;
+    
+}
+
+
+
+.loginTxt{
+    opacity: 0;
+    animation: var(--animationtime_2) ease var(--animationtime_1) normal forwards 1 logtxt_anim ;
+    --webkit-animation:var(--animationtime_2) ease var(--animationtime_1) normal forwards 1 logtxt_anim ;
+
+}
+@keyframes logtxt_anim {
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+
+    }
+}
+@-webkit-keyframes logtxt_anim{
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+
+    }
+}
+
+/* Driver */
+
+.l-driver{
+    position: absolute;
+    top: 8rem;
+    left: 1rem;
+    background:var(--driverbtn);
+    box-shadow: 0px 0px 4px 1px #9a60ff;
+
+    transform: translateX(-120%);
+    animation: var(--animationtime_2) ease var(--animationtime_1) normal forwards 1 driver_anim ;
+    --webkit-animation:var(--animationtime_2) ease var(--animationtime_1) normal forwards 1 driver_anim ;
+
+}
+.l-driver:hover{
+    box-shadow: 0px 0px 6px 1px #9a60ff;
+
+}
+
+
+@keyframes driver_anim {
+    to{
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes driver_anim {
+    to{
+        transform: translateX(0%);
+    }
+}
+
+/* Passenger */
+
+.l-passenger{
+    position: absolute;
+    top: 14rem;
+    right: 1rem;
+    background:var(--passengerbtn);
+    box-shadow: 0px 0px 4px 1px #d260ff;
+
+    transform: translateX(120%);
+
+    animation: var(--animationtime_2) ease var(--animationtime_1) normal forwards 1 passenger_anim ;
+    --webkit-animation:var(--animationtime_2) ease var(--animationtime_1) normal forwards 1 passenger_anim ;
+}
+
+.l-passenger:hover{
+    box-shadow: 0px 0px 6px 1px #d260ff;
+
+}
+
+@keyframes passenger_anim {
+    to{
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes passenger_anim {
+    to{
+        transform: translateX(0%);
+    }
+}

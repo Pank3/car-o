@@ -1,0 +1,27 @@
+.logout{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    margin-left: 10px;
+    margin-right: 10px;
+    /* height: 40px; */
+}
+.logout-btn{
+    border: 2px solid red;
+    border-radius: 0;
+    padding: 5px 5px 5px 5px;
+    margin-top: 5px;
+
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    color: red;
+
+}
+.welcome{
+    font-weight: bold;
+    font-size: 25px;
+    /* border: 1px solid; */
+    margin-top: 5px;
+}

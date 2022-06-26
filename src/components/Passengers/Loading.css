@@ -1,0 +1,20 @@
+.loading-page{
+    overflow: hidden;
+    /* border: 10px solid; */
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #00ff08; */
+}
+
+
+.loading-body{
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loading-body>p{
+    font-weight: bold;
+
+}
