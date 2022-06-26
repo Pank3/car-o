@@ -89,6 +89,11 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
         - Name : Pankaj Deb
         - Email : pankaj@gmail.com
         - Password : Pass123
+   
+   ## Installation Of CarO:
+         Download the "CarO_demo_application.apk" from this repository and install it in an Android Device.
+         Note : This is not Build for other devices(Eg : IOS)
+         
         
     ## Process  
     - Install our application in a device and **login as Passenger** with the above mentioned **Passenger Ids**.
